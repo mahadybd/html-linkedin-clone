@@ -7,7 +7,7 @@ Linkedin Clone website a responsive website built with HTML, CSS, and JavaScript
 You can explore the live demo of the site [here](https://html-linkedin-clone.netlify.app).
 
 You can visit the site and explore its various pages:
-- [Category Page](https://html-linkedin-clone.netlify.app/profile.html)
+- [Profile Page](https://html-linkedin-clone.netlify.app/profile.html)
 
 
 ## Key Features
