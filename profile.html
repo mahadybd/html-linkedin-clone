@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Site Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="wrapper">
+            <div class="container">
+                <div class="navbar-left">
+                    <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+                    <div class="search-box">
+                        <img src="images/search.png">
+                        <input type="text" placeholder="search">
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <ul id="menu">
+                        <li><a href="#" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+                        <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+                        <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                        <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+                        <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>
+                        <li><a href="#" onclick='toggleMenu()'>
+                                <img src="images/user-1.png" class="nav-profile-img">
+                                <span>Me<img src="images/down-arrow.png"></span>
+                            </a>
+                        </li>
+                        <li class="item_divider"><a href="#" onclick='toggleMenu()'>
+                            <img src="images/grid-view.png">
+                            <span>For Business<img src="images/down-arrow.png"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="premium-upsell-link">
+                                <a href="#">Reactivate Premium</a>
+                            </div>
+                            </li>
+                    </ul>
+                </div>
+                <!-- <div class="navbar-right">
+                    <div class="online">
+                        <img src="images/user-1.png" class="nav-profile-img" onclick='toggleMenu()'>
+                    </div>
+                </div> -->
+                <!------------------Profile Menu------------------- -->
+                <div class="profile-menu-wrap" id="profileMenu">
+                    <div class="profile-menu">
+                        <div class="user-info">
+                            <img src="images/user-1.png">
+                            <div>
+                                <h3>Mahady Hasan</h3>
+                                <a href="profile.html">See your profile</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href="#" class="profile-menu-link">
+                            <img src="images/feedback.png">
+                            <p>Give Feedback</p>
+                            <span>></span>
+                        </a>
+        
+                        <a href="#" class="profile-menu-link">
+                            <img src="images/setting.png">
+                            <p>Setting & privacy</p>
+                            <span>></span>
+                        </a>
+        
+                        <a href="#" class="profile-menu-link">
+                            <img src="images/help.png">
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+        
+                        <a href="#" class="profile-menu-link">
+                            <img src="images/display.png">
+                            <p>Display & Accessibility</p>
+                            <span>></span>
+                        </a>
+        
+                        <a href="#" class="profile-menu-link">
+                            <img src="images/logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+    <!-- ------------------------[navbar End]--------------- -->
+<div class="main-container">
+    <div class="container">
+        <div class="profile-main">
+            <div class="content-box overflow mb-10">
+                <div class="profile-container">
+                    <img src="images/cover-pic.png" width="100%">
+                    <div class="profile-container-inner">
+                        <img src="images/user-1.png" class="profile-pic">
+                        <h1>Mahady Hasan</h1>
+                        <span>Web Developer at OrbittechIT | Former developer at Microsoft</span>
+                        <p>Chemnitz, Germany &middot; <a href="#">Contact Info</a></p>
+                        <div class="mutual-connection">
+                            <img src="images/user-2.png">
+                            <span>1 mutual connection: Max Muller</span>
+                        </div>
+                        <div class="profile-btn">
+                            <a href="#" class="primary-btn"><img src="images/connect.png">Connect</a>
+                            <a href="#"><img src="images/chat.png">Message</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-box mb-10">
+                <div class="profile-description">
+                    <div class="description-header">
+                        <h2>About</h2>
+                    </div>
+                    
+                    <div class="description-body" id="contentContainer">
+                        <div class="longConten" id="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae ipsum eu nulla ultrices vestibulum. Nullam vel elit in nisi dictum volutpat. Integer hendrerit nisi nec ex finibus, non suscipit lectus tincidunt. Etiam vitae velit a nulla iaculis bibendum. Donec tempus elit in libero volutpat, at blandit est ultrices. Proin dignissim justo at felis laoreet, id vestibulum velit gravida. Vestibulum nec velit nec ex tristique tincidunt. Vivamus consectetur nisl id magna pharetra eleifend. Nulla auctor sapien ac sapien posuere, ac iaculis justo congue.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-box mb-10">
+                <div class="profile-description">
+                    <div class="description-header">
+                        <h2>Experience</h2>
+                    </div>
+                    <div class="description-body">
+                        <div class="profile-desc-row description-divider">
+                            <img src="images/microsoft.png">
+                            <div>
+                                <h3>Lead Front-End Developer</h3>
+                                <b>Microsoft &middot; FUll-time</b>
+                                <b>Feb 2022 - Present &middot; 2.5 years</b>
+                                <p>
+                                    Computer programming in the process of performing a particular computation, usually by designing and building an executable computer program.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="profile-desc-row description-divider">
+                            <img src="images/slack.png">
+                            <div>
+                                <h3>Full Stack Developer</h3>
+                                <b>Slack &middot; FUll-time</b>
+                                <b>Feb 2020 - Jan 2022 &middot; 2.5 years</b>
+                                <p>
+                                    Computer programming in the process of performing a particular computation, usually by designing and building an executable computer program.
+                                </p>
+                            </div>
+                        </div>
+            
+                        <div class="profile-desc-row ">
+                            <img src="images/google.png">
+                            <div>
+                                <h3>Web Developer/h3>
+                                <b>Google Inc &middot; FUll-time</b>
+                                <b>Mar 2017 - Jan 2020 &middot; 2.7 years</b>
+                                <p>
+                                    Computer programming in the process of performing a particular computation, usually by designing and building an executable computer program.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-footer">
+                        <a href="#" class="experience-link">Show all 7 experiences <img src="images/right-arrow.png"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-box mb-10">
+                <div class="profile-description">
+                    <div class="description-header">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="description-body">
+                        <div class="profile-desc-row description-divider">
+                            <img src="images/stanford.png">
+                            <div>
+                                <h3>Stanford University</h3>
+                                <b>BSEE Electrical Engineering</b>
+                                <b>2013 - 2017</b>
+                            </div>
+                        </div> 
+                        <div class="profile-desc-row description-divider">
+                            <img src="images/north.png">
+                            <div>
+                                <h3>Northwestern University</h3>
+                                <b>Computer Science</b>
+                                <b>2010 - 2013</b>
+                            </div>
+                        </div> 
+                        <div class="profile-desc-row">
+                            <img src="images/mit.png">
+                            <div>
+                                <h3>Harvard University</h3>
+                                <b>Senior High School</b>
+                                <b>2000 - 2010</b>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="description-footer">
+                        <a href="#" class="experience-link">Show all 4 educations <img src="images/right-arrow.png"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-box mb-10">
+                <div class="profile-description">
+                    <div class="description-header">
+                        <h2>Skills</h2>
+                    </div>
+                    <div class="description-body mb-10">
+                        <a href="#" class="skills-btn">Leadership</a>
+                        <a href="#" class="skills-btn">Web Design</a>
+                        <a href="#" class="skills-btn">Development</a>
+                        <a href="#" class="skills-btn">Communication</a>
+                        <a href="#" class="skills-btn">UI/UX</a>
+                        <a href="#" class="skills-btn">Planning</a>
+                        <a href="#" class="skills-btn">Coding</a>
+                        <a href="#" class="skills-btn">Algorithm</a>
+                        <a href="#" class="skills-btn">Entrepreneurship</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-box mb-10">
+                <div class="profile-description">
+                    <div class="description-header">
+                        <h2>Languages</h2>
+                    </div>
+                    <div class="description-body mb-10">
+                        <a href="#" class="language-btn">English</a>
+                        <a href="#" class="language-btn">German</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+        <!-- ------------------Profile Sidebar------------------------------ -->
+        <div class="profile-sidebar">  
+            <div class="content-box space-around sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="images/user-2.png">
+                    <div>
+                        <h2>Max Muller</h2>
+                        <p>Head of marking at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+    
+                <div class="sidebar-people-row">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h2>Anha Mahreen</h2>
+                        <p>Senior Programmer at OTTO</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+    
+                <div class="sidebar-people-row">
+                    <img src="images/user-4.png">
+                    <div>
+                        <h2>Afruja Parvin</h2>
+                        <p>Head of Business at BMW</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+    
+                <div class="sidebar-people-row">
+                    <img src="images/user-5.png">
+                    <div>
+                        <h2>Maruf Hasan</h2>
+                        <p>Team leader at Amazon</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="profile-footer">
+    <div class="sidebar-useful-links">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Get the app</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+
+        <div class="copyright-msg">
+            <img src="images/logo.png">
+            <p>Linkedup &#169; 2023. ALl right reserved.</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

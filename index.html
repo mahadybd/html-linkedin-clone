@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Site Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="wrapper">
+            <div class="container">
+                <div class="navbar-left">
+                    <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+                    <div class="search-box">
+                        <img src="images/search.png">
+                        <input type="text" placeholder="search">
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <ul id="menu">
+                        <li><a href="#" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+                        <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+                        <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                        <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+                        <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>
+                        <li><a href="#" onclick='toggleMenu()'>
+                                <img src="images/user-1.png" class="nav-profile-img">
+                                <span>Me<img src="images/down-arrow.png"></span>
+                            </a>
+                        </li>
+                        <li class="item_divider"><a href="#" onclick='toggleMenu()'>
+                            <img src="images/grid-view.png">
+                            <span>For Business<img src="images/down-arrow.png"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="premium-upsell-link">
+                                <a href="#">Reactivate Premium</a>
+                            </div>
+                            </li>
+                    </ul>
+                </div>
+                <!-- <div class="navbar-right">
+                    <div class="online">
+                        <img src="images/user-1.png" class="nav-profile-img" onclick='toggleMenu()'>
+                    </div>
+                </div> -->
+                <!------------------Profile Menu------------------- -->
+                <div class="profile-menu-wrap" id="profileMenu">
+                    <div class="profile-menu">
+                        <div class="user-info">
+                            <img src="images/user-1.png">
+                            <div>
+                                <h3>Mahady Hasan</h3>
+                                <a href="profile.html">See your profile</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href="#" class="profile-menu-link">
+                            <img src="images/feedback.png">
+                            <p>Give Feedback</p>
+                            <span>></span>
+                        </a>
+        
+                        <a href="#" class="profile-menu-link">
+                            <img src="images/setting.png">
+                            <p>Setting & privacy</p>
+                            <span>></span>
+                        </a>
+        
+                        <a href="#" class="profile-menu-link">
+                            <img src="images/help.png">
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+        
+                        <a href="#" class="profile-menu-link">
+                            <img src="images/display.png">
+                            <p>Display & Accessibility</p>
+                            <span>></span>
+                        </a>
+        
+                        <a href="#" class="profile-menu-link">
+                            <img src="images/logout.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+    <!--------------------------[navbar End]--------------- -->
+    <div class="main-container">
+        <div class="container">
+            <!--------------------------[left-sidebar]--------------- -->
+            <div class="left-sidebar">
+                <div class="content-box overflow mb-10">
+                    <div class="sidebar-profile-box">
+                        <img src="images/cover-pic.png" width="100%">
+                        <div class="sidebar-profile-info small-screen">
+                            <img src="images/user-1.png">
+                            <h1>Mahady Hasan</h1>
+                            <h3>Web Developer</h3>
+                        </div>
+                        <div class="sidebar-profile-info content-divider hideMe">
+                            <ul>
+                                <li>Profile viewers<span>69</span></li>
+                                <li>Connections<span>759</span></li>
+                                <li>Manage your network</li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-profile-link hideMe">
+                            <a class="content-divider" href="#"><img src="images/premium.png">Try Premium</a>
+                            <a class="content-divider" href="#"><img src="images/items.png">Saved items</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-box space-around">
+                    <div class="sidebar-activity" id="sideBarActivity">
+                        <h3>RECENT</h3>
+                        <a href="#"><img src="images/recent.png">Web Development</a>
+                        <a href="#"><img src="images/recent.png">User Interface</a>
+                        <a href="#"><img src="images/recent.png">Online Learning</a>
+                        <a href="#"><img src="images/recent.png">Group Learning</a>
+                        <a href="#"><img src="images/recent.png">Code Better</a>
+        
+                        <h3>GROUP</h3>
+                        <a href="#"><img src="images/group.png">Web Design Group</a>
+                        <a href="#"><img src="images/group.png">HTML & CSS Learners</a>
+                        <a href="#"><img src="images/group.png">Python & Java</a>
+                        <a href="#"><img src="images/group.png">Coding Online</a>
+        
+                        <h3>HASHTAG</h3>
+                        <a href="#"><img src="images/hashtag.png">webdevelopment</a>
+                        <a href="#"><img src="images/hashtag.png">userinterface</a>
+                        <a href="#"><img src="images/hashtag.png">onlinelearning</a>
+        
+                        <div class="discover-more-link">
+                            <a href="#">Discover more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <p id="showMoreLink" onclick = 'toggleActivity()'>Show more <b>+</b></p>
+            </div>
+            <!--------------------------[main-content]--------------- -->
+            <div class="main-content">
+                <div class="content-box">
+                    <div class="create-post">
+                        <div class="create-post-input">
+                            <img src="images/user-1.png">
+                            <textarea name="create-post" rows="2" placeholder="write a post"></textarea>
+                        </div>
+                        <div class="create-post-links">
+                            <ul>
+                                <li><img src="images/media.png">Media</li>
+                                <li><img src="images/event.png">Event</li>
+                                <li><img src="images/article.png">Write article</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sort-by">
+                    <hr>
+                    <p>Sort by: <span>top <img src="images/down-arrow.png"></span></p>
+                </div>
+                <div class="post">
+                    <div class="post-author">
+                        <img src="images/user-3.png">
+                        <div>
+                            <h1>Afruja Pervin</h1>
+                            <small>Founder and CEO at Orbittechit</small>
+                            <small>1 hours ago</small>
+                        </div>
+                    </div>
+                    <p>Search Engine Optimization, is the key to improving website ranking. It involves optimizing content, structure, and backlinks to enhance a website's visibility and organic traffic in search engine results. Higher SEO effectiveness leads to better website ranking.</p>
+                    <img src="images/post-image-1.png" width="100%">
+    
+                    <div class="post-stats">
+                        <div>
+                            <img src="images/thumbsup.png">
+                            <img src="images/love.png">
+                            <img src="images/clap.png">
+                            <span class="liked-users">Anha Mahreen and 256 others</span>
+                        </div>
+                        <div>
+                            <span>22 comments &middot; 40 shares</span>
+                        </div>
+                    </div>
+                    <div class="post-activity">
+                        <div>
+                            <img src="images/user-1.png" class="post-activity-user-icon">
+                            <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/like.png">
+                            <span>Like</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/comment.png">
+                            <span>Comment</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/share.png">
+                            <span>Share</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/send.png">
+                            <span>Send</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-author">
+                        <img src="images/user-2.png">
+                        <div>
+                            <h1>Max Muller</h1>
+                            <small>Founder and CEO at Orbittechit</small>
+                            <small>1 hours ago</small>
+                        </div>
+                    </div>
+                    <p>Online certification programs provide a flexible and convenient way to enhance your expertise in various fields, offering self-paced learning and recognized credentials that can boost your career and professional development.</p>
+                    <img src="images/post-image-2.png" width="100%">
+    
+                    <div class="post-stats">
+                        <div>
+                            <img src="images/thumbsup.png">
+                            <img src="images/love.png">
+                            <img src="images/clap.png">
+                            <span class="liked-users">Anha Mahreen and 256 others</span>
+                        </div>
+                        <div>
+                            <span>22 comments &middot; 40 shares</span>
+                        </div>
+                    </div>
+                    <div class="post-activity">
+                        <div>
+                            <img src="images/user-1.png" class="post-activity-user-icon">
+                            <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/like.png">
+                            <span>Like</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/comment.png">
+                            <span>Comment</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/share.png">
+                            <span>Share</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/send.png">
+                            <span>Send</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-author">
+                        <img src="images/user-4.png">
+                        <div>
+                            <h1>Ayra Mahady</h1>
+                            <small>Founder and CEO at Orbittechit</small>
+                            <small>1 hours ago</small>
+                        </div>
+                    </div>
+                    <p>Mastering Python in the context of machine learning equips you with valuable capabilities to thrive in the ever-evolving tech landscape, as machine learning continues to drive innovations across various industries.</p>
+                    <img src="images/post-image-4.png" width="100%">
+    
+                    <div class="post-stats">
+                        <div>
+                            <img src="images/thumbsup.png">
+                            <img src="images/love.png">
+                            <img src="images/clap.png">
+                            <span class="liked-users">Anha Mahreen and 256 others</span>
+                        </div>
+                        <div>
+                            <span>22 comments &middot; 40 shares</span>
+                        </div>
+                    </div>
+                    <div class="post-activity">
+                        <div>
+                            <img src="images/user-1.png" class="post-activity-user-icon">
+                            <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/like.png">
+                            <span>Like</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/comment.png">
+                            <span>Comment</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/share.png">
+                            <span>Share</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="images/send.png">
+                            <span>Send</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ------------------------[right-sidebar]--------------- -->
+            <div class="right-sidebar">
+                <div class="content-box space-around mb-10">
+                    <div class="sidebar-news">
+                        <img src="images/more.png" class="info-icon">
+                        <h3>Trending News</h3>
+        
+                        <a href="#">High demand for skilled manpower</a>
+                        <span>1d ago &middot; 10,068 reader</span>
+        
+                        <a href="#">Careers growing horizontally too</a>
+                        <span>19h ago &middot; 5,268 reader</span>
+        
+                        <a href="#">Less work visa for Germany, more for US</a>
+                        <span>1d ago &middot; 30,098 reader</span>
+        
+                        <a href="#">More hiring on top skills</a>
+                        <span>15ago &middot; 6,138 reader</span>
+        
+                        <a href="#">Automotive technology revolution</a>
+                        <span>10h ago &middot; 8,635 reader</span>
+        
+                        <a href="#" class="read-more-link">Read More...</a>
+                    </div>
+                </div>
+
+                <div class="content-box mb-10">
+                    <div class="sidebar-ad">
+                        <small>Ad</small>
+                        <p>Master the 5 principal of Web design</p>
+                        <div>
+                            <img src="images/user-1.png">
+                            <img src="images/mi-logo.png">
+                        </div>
+                        <b>Brand and demand in Xiaomi</b>
+                        <a href="#" class="ad-btn">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="sidebar-useful-links">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Get the app</a></li>
+                        <li><a href="#">More</a></li>
+                    </ul>
+    
+                    <div class="copyright-msg">
+                        <img src="images/logo.png">
+                        <p>Linkedup &#169; 2023. ALl right reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
